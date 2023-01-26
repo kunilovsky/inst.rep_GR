@@ -24,17 +24,18 @@ body {
 
 .btn-thema {
   color: #6C6C6C;
+  border: none;
 }
 
 .btn-thema:hover {
   color: #6C6C6C;
 }
 
-.thema__action-1 svg path {
+.icon__light svg path {
   transition: transform 1s,opacity .7s,-webkit-transform 1s;
 }
 
-.thema__action-1 svg path:nth-child(1) {
+.icon__light svg path:nth-child(1) {
   -webkit-transform: translate(54px, 12px);
           transform: translate(54px, 12px);
   opacity: 0;
@@ -46,7 +47,7 @@ body {
           transform: translate(-54px, 12px);
 }
 
-.thema__action-2 svg path {
+.icon__dark svg path {
   transition: transform 1s,opacity .7s,-webkit-transform 1s;
 }
 
@@ -56,7 +57,7 @@ body {
   opacity: 0;
 }
 
-.thema__action-2 svg path:nth-child(2) {
+.icon__dark svg path:nth-child(2) {
   opacity: 0;
   -webkit-transform: translate(-54px, 12px);
           transform: translate(-54px, 12px);
