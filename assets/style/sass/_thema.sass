@@ -1,0 +1,44 @@
+body
+    font-family: 'Open Sans', sans-serif
+/* Colors */
+$dark: #1D262F !global
+$white: #ffffff !global
+$grey: #6C6C6C !global
+$iconTheme: #707070 !global
+
+/* Light Thema */
+body
+    --text-white: #{$white }
+    --text-dark: #{$dark}
+    --border-white: #{$white }
+    --border-dark: #{$dark}
+    --bg-white: #{$white}
+    --bg-dark: #{$dark}
+.dark
+    --text-white: #{$dark}
+    --text-dark: #{$white}
+    --border-white: #{$dark}
+    --border-dark: #{$white}
+    --bg-white: #{$dark}
+    --bg-dark: #{$dark}
+.btn-thema
+    color: $grey
+    &:hover
+        color: $grey
+.thema__action-1 svg path
+    transition: transform 1s,opacity .7s,-webkit-transform 1s
+.thema__action-1 svg path:nth-child(1)
+    transform: translate(54px, 12px)
+    opacity: 0
+.thema__action svg path:nth-child(2)
+    opacity: 0
+    transform: translate(-54px, 12px);
+
+.thema__action-2 svg path
+    transition: transform 1s,opacity .7s,-webkit-transform 1s
+.thema__action svg path:nth-child(1)
+    transform: translate(54px, 12px)
+    opacity: 0
+.thema__action-2 svg path:nth-child(2)
+    opacity: 0
+    transform: translate(-54px, 12px);
