@@ -8,15 +8,15 @@ $iconTheme: #707070 !global
 
 /* Light Thema */
 body
-    --text-white: #{$white }
-    --text-dark: #{$dark}
+    --text-white: #{$dark}
+    --text-dark: #{$white}
     --border-white: #{$white }
     --border-dark: #{$dark}
     --bg-white: #{$white}
     --bg-dark: #{$dark}
 .dark
-    --text-white: #{$dark}
-    --text-dark: #{$white}
+    --text-white: #{$white}
+    --text-dark: #{$dark}
     --border-white: #{$dark}
     --border-dark: #{$white}
     --bg-white: #{$dark}
@@ -33,7 +33,7 @@ body
     opacity: 0
 .thema__action svg path:nth-child(2)
     opacity: 0
-    transform: translate(-54px, 12px);
+    transform: translate(-54px, 12px)
 
 .icon__dark svg path
     transition: transform 1s,opacity .7s,-webkit-transform 1s
@@ -42,4 +42,7 @@ body
     opacity: 0
 .icon__dark svg path:nth-child(2)
     opacity: 0
-    transform: translate(-54px, 12px);
+    transform: translate(-54px, 12px)
+main
+    background: var(--bg-white)
+    color: var(--text-white)
