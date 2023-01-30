@@ -91,6 +91,14 @@ header {
   white-space: normal;
 }
 
+.nav-link {
+  color: var(--text-white);
+}
+
+.nav-link:hover {
+  color: #6C6C6C;
+}
+
 .logo {
   max-width: 255px;
   font-size: 8px;
@@ -126,6 +134,16 @@ header {
   .logo__name {
     font-size: 14px;
   }
+  .navbar-nav {
+    text-align: center;
+  }
+  .nav-link {
+    padding: 15px 0;
+  }
+}
+
+#program, #price, #author, #contacts {
+  scroll-margin-top: 100px;
 }
 
 /* Border-block */
@@ -187,6 +205,7 @@ h2 {
 @media (max-width: 992px) {
   h2 {
     font-size: 25px;
+    font-weight: 600;
   }
 }
 
@@ -325,6 +344,7 @@ section {
 .price__size {
   font-size: 50px;
   font-weight: 600;
+  width: 75%;
 }
 
 .price__size span {
@@ -338,6 +358,25 @@ section {
 
 .price-future {
   background: #6C6C6C;
+}
+
+.no-active {
+  opacity: .3;
+}
+
+@media (max-width: 992px) {
+  .price {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price__size {
+    width: 100%;
+    font-size: 35px;
+  }
+  .price button {
+    margin-top: 15px;
+    width: 100%;
+  }
 }
 
 /* Author */
@@ -392,6 +431,17 @@ section {
   margin-right: 5px;
 }
 
+@media (max-width: 992px) {
+  .author__info-list li {
+    font-weight: 300;
+  }
+  .author__info h4 {
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 /* Promo */
 .promo span {
   font-weight: 300;
@@ -403,12 +453,17 @@ section {
 }
 
 /* Contacts */
+.contacts__img {
+  width: 50%;
+}
+
 .contacts__img img {
   width: 100%;
   height: auto;
 }
 
 .contacts__text {
+  width: 50%;
   padding-left: 30px;
 }
 
@@ -430,10 +485,27 @@ section {
   text-decoration: none;
   font-size: 18px;
   padding-bottom: 12px;
+  color: var(--text-white);
 }
 
 .contacts__text a > .bi {
   color: var(--text-white);
+}
+
+@media (max-width: 992px) {
+  .contacts__img {
+    width: 25%;
+  }
+  .contacts__text {
+    width: 75%;
+  }
+}
+
+/* Modal */
+.modal-title {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 }
 
 footer {

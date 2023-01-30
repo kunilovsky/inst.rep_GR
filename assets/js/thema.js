@@ -5,7 +5,7 @@ const burger = document.getElementById('burger');
 if (theme === 'dark') {
   document.body.classList.add('dark');
   toggle.classList.add('icon__light');
-  burger.classList.add('navbar-toggler-icon-white')
+  burger.classList.add('navbar-toggler-icon-white');
 } else toggle.classList.add('icon__dark');
 
 toggle.addEventListener('click', () => {

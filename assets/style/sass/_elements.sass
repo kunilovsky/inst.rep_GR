@@ -15,6 +15,7 @@ h2
 @media (max-width: 992px)
     h2
         font-size: 25px
+        font-weight: 600
 p
     font-size: 20px
     font-weight: 400
@@ -25,6 +26,7 @@ section
     margin-bottom: 100px
 .bi
     margin: 0 5px
+
 /* Section: START */
 .start
     padding-top: 20px
@@ -102,6 +104,7 @@ section
     &__size
         font-size: 50px
         font-weight: 600
+        width: 75%
         & span
             font-size: 30px
             font-weight: 600
@@ -109,6 +112,17 @@ section
             font-size: 12px
 .price-future
     background: $grey
+.no-active
+    opacity: .3
+@media (max-width: 992px)
+    .price
+        flex-wrap: wrap
+        &__size
+            width: 100%
+            font-size: 35px
+        & button
+            margin-top: 15px
+            width: 100%
 /* Author */
 .author
     &__info
@@ -147,6 +161,16 @@ section
         background-size: 100%
         display: inline-block
         margin-right: 5px
+@media (max-width: 992px)
+    .author
+        &__info-list
+            & li
+                font-weight: 300
+        &__info
+            & h4
+                font-size: 25px
+                padding-top: 15px
+                padding-bottom: 15px
 /* Promo */
 .promo
     span
@@ -156,10 +180,13 @@ section
         font-weight: 500
 /* Contacts */
 .contacts
-    &__img img
-        width: 100%
-        height: auto
+    &__img
+        width: 50%
+        & img
+            width: 100%
+            height: auto
     &__text
+        width: 50%
         padding-left: 30px
         & h5
             font-size: 30px
@@ -175,5 +202,17 @@ section
             text-decoration: none
             font-size: 18px
             padding-bottom: 12px
+            color: var(--text-white)
         & a>.bi
             color: var(--text-white)
+@media (max-width: 992px)
+    .contacts
+        &__img
+            width: 25%
+        &__text
+            width: 75%
+/* Modal */
+.modal-title
+    text-transform: uppercase
+    text-align: center
+    width: 100%
