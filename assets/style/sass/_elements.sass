@@ -1,16 +1,30 @@
 /* Global */
 h1
-    font-size: 90px 
+    font-size: 90px
     font-weight: 500
     line-height: 155%
     text-transform: capitalize
+@media (max-width: 992px)
+    h1
+        font-size: 30px
+h2
+    font-size: 50px
+    font-weight: 500
+    text-transform: uppercase
+    margin-bottom: 40px
+@media (max-width: 992px)
+    h2
+        font-size: 25px
 p
     font-size: 20px
     font-weight: 400
+section
+    margin-bottom: 100px
+.bi
+    margin: 0 5px
 /* Section: START */
 .start
-    height: 100vh
-    padding-top: 30px
+    padding-top: 20px
     &__post
         border-color: var(--bg-white)
         background-color: var(--bg-dark)
@@ -26,3 +40,128 @@ p
             display: block
             width: 100%
             font-size: 10px
+@media (max-width: 992px)
+    .start
+        &__post
+            padding: 25px 20px
+            & button
+                margin-top: 25px
+                font-size: 16px
+/* Section Program */
+.prog
+    &__item
+        border: 2px solid var(--border-dark)
+        padding: 10px
+        & p
+            font-weight: 600
+        &__num
+            font-size: 16px
+            color: $grey
+        &__des
+            font-size: 12px
+            font-weight: 300
+    &__present
+        font-weight: 600
+        font-size: 18px
+        text-decoration: none
+        color: var(--text-white)
+        text-transform: uppercase
+        margin-top: 15px
+        display: block
+        &:hover
+            text-decoration: none
+            color: var(--text-white)
+.br-top-right-8
+    border-radius: 8px 0 0 0
+.br-top-left-8
+    border-radius: 0 8px 0 0
+.br-bot-right-8
+    border-radius: 0 0 8px 0
+.br-bot-left-8
+    border-radius: 0 0 0 8px
+/* Price section */
+.price
+    background: var(--bg-dark)
+    color: $white
+    border-radius: 8px
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25)
+    border: 1px solid $white
+    padding: 35px
+    &__size
+        font-size: 50px
+        font-weight: 600
+        & span
+            font-size: 30px
+            font-weight: 600
+        &__des
+            font-size: 12px
+.price-future
+    background: $grey
+/* Author */
+.author
+    &__info
+        & h4
+            font-size: 40px
+            font-weight: 500
+        & p
+            font-size: 18 !important
+            font-weight: 400
+        &__course span
+            background: var(--bg-dark)
+            font-size: 10px
+            margin-right: 10px
+            border-radius: 3px
+            border: 1px solid $white
+            color: $white
+            padding: 5px
+        & a
+            text-decoration: none
+            font-size: 18px
+    &__info-list
+        font-size: 18px
+        font-weight: 400
+        list-style: none
+        padding-left: 0
+        padding-top: 15px
+        & li
+            padding-bottom: 15px
+            display: flex
+            font-size: 16px
+    &__info-list-style::before
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" viewBox="0 0 16 16"%3E%3Cpath fill="%236c6c6c" fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"%2F%3E%3C%2Fsvg%3E')
+        content: ''
+        width: 20px
+        height: 20px
+        background-size: 100%
+        display: inline-block
+        margin-right: 5px
+/* Promo */
+.promo
+    span
+        font-weight: 300
+        font-size: 12px
+    p
+        font-weight: 500
+/* Contacts */
+.contacts
+    &__img img
+        width: 100%
+        height: auto
+    &__text
+        padding-left: 30px
+        & h5
+            font-size: 30px
+            font-weight: 500
+        & span
+            font-size: 12px
+            font-weight: 300
+            color: $grey
+            display: block
+            margin: 15px 0
+        & a
+            display: block
+            text-decoration: none
+            font-size: 18px
+            padding-bottom: 12px
+        & a>.bi
+            color: var(--text-white)
